@@ -8,6 +8,7 @@ export 'components/context_menu.dart';
 export 'components/dialog.dart';
 export 'components/icons.dart';
 export 'components/logos.dart';
+export 'components/tags.dart';
 export 'components/search_bar.dart';
 export 'components/talenty_symmetric_fade.dart';
 export 'components/talenty_text_field.dart';
