@@ -216,6 +216,7 @@ class Social {
   String get google => '$_socialPath/Google.svg';
   String get instagram => '$_socialPath/Instagram.svg';
   String get linkedin => '$_socialPath/Linkedin.svg';
+  String get tikTok => '$_socialPath/TikTok.svg';
   String get twitter => '$_socialPath/Twitter.svg';
   String get whatsapp => '$_socialPath/Whatsapp.svg';
   String get youtube => '$_socialPath/Youtube.svg';

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:talenty_common/talenty_common.dart';
+import 'package:talenty_common/fundamentals/colors.dart';
+import 'package:talenty_common/fundamentals/text_styles.dart';
 
 class TalentyTags extends StatelessWidget {
   final double? width;
