@@ -33,4 +33,6 @@ class TalentyLogos {
   static const String logoCompuesto = '$_logoPath/Logo-compuesto.svg';
   static const String talentyIcon3640 = '$_logoPath/talenty-icon-36-40.svg';
   static const String talentyIcon7280 = '$_logoPath/talenty-icon-72-80.svg';
+  static const String celebrityLogo = '$_logoPath/celebrity-logo.svg';
+  static const String handLogo = '$_logoPath/hand-logo.svg';
 }
