@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:talenty_common/fundamentals/colors.dart';
 import 'package:talenty_common/components/icons.dart';
+import 'package:talenty_common/fundamentals/colors.dart';
+import 'package:talenty_common/fundamentals/gap_spaces.dart';
 import 'package:talenty_common/fundamentals/text_styles.dart';
 
 enum TalentyTextFieldType {
@@ -170,7 +171,7 @@ class _TalentyTextFormFieldState extends State<TalentyTextFormField> {
             ),
             color: _backgroundColor,
           ),
-          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          padding: EdgeInsets.symmetric(horizontal: TalentyGapSpaces.level4),
           height: widget.type.height,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -179,7 +180,7 @@ class _TalentyTextFormFieldState extends State<TalentyTextFormField> {
             children: [
               if (widget.type.isLarge)
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 8.0),
+                  padding: EdgeInsets.only(bottom: TalentyGapSpaces.level2),
                   child: Text(
                     widget.placeholder ?? '',
                     style: TextStyle(
@@ -194,7 +195,7 @@ class _TalentyTextFormFieldState extends State<TalentyTextFormField> {
         ),
         if (_validatorError != null)
           Padding(
-            padding: const EdgeInsets.only(top: 8.0),
+            padding: EdgeInsets.only(top: TalentyGapSpaces.level2),
             child: Text(
               _validatorError!,
               style: TalentyTextStyles().captionLargeBold().copyWith(

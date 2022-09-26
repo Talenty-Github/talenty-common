@@ -13,6 +13,7 @@ export 'components/talenty_text_field.dart';
 export 'components/talenty_vertical_divider.dart';
 export 'fundamentals/colors.dart';
 export 'fundamentals/error_codes.dart';
+export 'fundamentals/gap_spaces.dart';
 export 'fundamentals/text_styles.dart';
 export 'utils/number_format.dart';
 export 'utils/responsive_widgets.dart';

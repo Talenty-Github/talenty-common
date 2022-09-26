@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:talenty_common/components/icons.dart';
 import 'package:talenty_common/components/popupmenu.dart';
 import 'package:talenty_common/fundamentals/colors.dart';
-import 'package:talenty_common/components/icons.dart';
+import 'package:talenty_common/fundamentals/gap_spaces.dart';
 
 class TalentyAuthButton extends StatefulWidget {
   final Image? profilePicture;
@@ -29,7 +30,7 @@ class _TalentyAuthButtonState extends State<TalentyAuthButton> {
         child: TalentyPopupMenu(
           menuItems: widget.menuItems,
           child: Padding(
-            padding: const EdgeInsets.only(top: 16, bottom: 16),
+            padding: EdgeInsets.symmetric(vertical: TalentyGapSpaces.level3),
             child: Material(
               elevation: _authPressed ? 7 : 0,
               color: TalentyColors.white,

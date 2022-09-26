@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:talenty_common/fundamentals/colors.dart';
 import 'package:talenty_common/components/icons.dart';
+import 'package:talenty_common/fundamentals/colors.dart';
+import 'package:talenty_common/fundamentals/gap_spaces.dart';
 import 'package:talenty_common/fundamentals/text_styles.dart';
 
 class TalentySearchBar extends StatelessWidget {
@@ -8,14 +9,16 @@ class TalentySearchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const double borderRadius = 24.0;
+
     return Container(
       width: 405,
       height: 48,
-      padding: const EdgeInsets.symmetric(horizontal: 24.0),
+      padding: EdgeInsets.symmetric(horizontal: TalentyGapSpaces.level4),
       decoration: BoxDecoration(
         color: TalentyColors.white,
         border: Border.all(color: TalentyColors.carbon200),
-        borderRadius: BorderRadius.circular(24.0),
+        borderRadius: BorderRadius.circular(borderRadius),
         boxShadow: const [
           BoxShadow(
               color: TalentyColors.carbon200,
@@ -34,10 +37,10 @@ class TalentySearchBar extends StatelessWidget {
               minHeight: 24, minWidth: 24, maxHeight: 24, maxWidth: 24),
           suffixIcon: Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(24.0),
+              borderRadius: BorderRadius.circular(borderRadius),
               color: TalentyColors.blueJeans500,
             ),
-            padding: const EdgeInsets.all(4.0),
+            padding: EdgeInsets.all(TalentyGapSpaces.level1),
             child: SizedBox(
               child: TalentyIcon(
                   icon: TalentyIcons.actions.search,

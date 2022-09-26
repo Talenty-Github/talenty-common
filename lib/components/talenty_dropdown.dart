@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:talenty_common/components/icons.dart';
 import 'package:talenty_common/fundamentals/colors.dart';
+import 'package:talenty_common/fundamentals/gap_spaces.dart';
 import 'package:talenty_common/fundamentals/text_styles.dart';
 
 class TalentyDropDownButton<T> extends StatelessWidget {
@@ -52,10 +53,10 @@ class TalentyDropDownButton<T> extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(label ?? '', style: TalentyTextStyles().bodySmallNormal(color: TalentyColors.carbon800)),
-        const SizedBox(height: 8.0),
+        SizedBox(height: TalentyGapSpaces.level2),
         Container(
           height: 48.0,
-          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          padding: EdgeInsets.symmetric(horizontal: TalentyGapSpaces.level4),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8.0),
             border: Border.all(color: TalentyColors.carbon200),

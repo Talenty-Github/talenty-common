@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:talenty_common/components/icons.dart';
 import 'package:talenty_common/fundamentals/colors.dart';
+import 'package:talenty_common/fundamentals/gap_spaces.dart';
 
 enum TalentyActionButtonDirection { left, right }
 
@@ -60,7 +61,7 @@ class _TalentyActionButtonState extends State<TalentyActionButton> {
       ),
       width: 32,
       height: 32,
-      padding: const EdgeInsets.all(4),
+      padding: EdgeInsets.all(TalentyGapSpaces.level1),
       child: TalentyIcon(
           icon: widget.direction == TalentyActionButtonDirection.left
               ? TalentyIcons.navigation.chevronLeft

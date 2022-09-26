@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:talenty_common/fundamentals/colors.dart';
+import 'package:talenty_common/fundamentals/gap_spaces.dart';
 import 'package:talenty_common/fundamentals/text_styles.dart';
 
 enum TalentyButtonMode { carbon, blueJeans }
@@ -18,12 +19,12 @@ ButtonStyle talentyTextButtonStyle = ButtonStyle(
 );
 
 class TalentyButton extends StatefulWidget {
-  double horizontalPadding = 16.0;
+  double horizontalPadding = TalentyGapSpaces.level3;
   bool underline = false;
   bool noBorder = false;
   String text = '';
   final double borderRadius = 8.0;
-  double verticalPadding = 8.5;
+  double verticalPadding = TalentyGapSpaces.level2;
   bool disabled;
   late Color backgroundColor;
   late Color fontColor;
@@ -122,7 +123,7 @@ class TalentyButton extends StatefulWidget {
   }) {
     mainAxisSize = MainAxisSize.min;
     mainAxisAlignment = MainAxisAlignment.start;
-    horizontalPadding = 8.5;
+    horizontalPadding = TalentyGapSpaces.level2;
     underline = true;
     fontColor = disabled ? TalentyColors.carbon400 : TalentyColors.carbon900;
     borderColor = TalentyColors.transparent;
@@ -147,7 +148,7 @@ class _TalentyButtonState extends State<TalentyButton> {
   Widget build(BuildContext context) {
     List<Widget> rowElements = [];
     if (widget.iconPosition == TalentyButtonIconPosition.left) {
-      rowElements.addAll([widget.icon!, const SizedBox(width: 8.0)]);
+      rowElements.addAll([widget.icon!, SizedBox(width: TalentyGapSpaces.level2)]);
     }
     rowElements.add(Text(
       widget.text,
@@ -158,7 +159,7 @@ class _TalentyButtonState extends State<TalentyButton> {
       ),
     ));
     if (widget.iconPosition == TalentyButtonIconPosition.right) {
-      rowElements.addAll([const SizedBox(width: 8.0), widget.icon!]);
+      rowElements.addAll([SizedBox(width: TalentyGapSpaces.level2), widget.icon!]);
     }
     Widget inkWellContent = Ink(
       decoration: BoxDecoration(
