@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:talenty_common/components/buttons.dart';
 import 'package:talenty_common/components/icons.dart';
 import 'package:talenty_common/fundamentals/colors.dart';
-import 'package:talenty_common/components/buttons.dart';
 import 'package:talenty_common/fundamentals/error_codes.dart';
 import 'package:talenty_common/fundamentals/text_styles.dart';
 
