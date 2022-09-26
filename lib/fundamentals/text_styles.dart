@@ -2,6 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:talenty_common/fundamentals/colors.dart';
 
 class TalentyTextStyles {
+  TextStyle headingExtraLarge({
+    Color color = TalentyColors.carbon900,
+    FontWeight fontWeight = FontWeight.w500,
+    bool underline = false,
+  }) => TextStyle(
+        color: color,
+        fontWeight: fontWeight,
+        fontSize: 36.0,
+        decoration: underline ? TextDecoration.underline : null,
+      );
+
   TextStyle headingLarge({
     Color color = TalentyColors.carbon900,
     FontWeight fontWeight = FontWeight.w500,
