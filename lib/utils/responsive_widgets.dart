@@ -1,32 +1,18 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:responsive_framework/responsive_framework.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 EdgeInsets pagePadding(BuildContext context) {
-  return ResponsiveValue(
-    context,
-    defaultValue: const EdgeInsets.symmetric(
-      horizontal: 56,
-    ),
-    valueWhen: [
-      const Condition.smallerThan(
-          name: DESKTOP, value: EdgeInsets.symmetric(horizontal: 60)),
-      const Condition.smallerThan(
-          name: TABLET, value: EdgeInsets.symmetric(horizontal: 16)),
-    ],
-  ).value!;
+  return EdgeInsets.symmetric(
+    horizontal: getValueForScreenType<double>(
+      context: context, mobile: 16.0, tablet: 60.0, desktop: 56.0),
+  );
 }
 
 double cardCarouselDistance(BuildContext context) {
-  return ResponsiveValue(
-    context,
-    defaultValue: 32.0,
-    valueWhen: [
-      const Condition.smallerThan(name: TABLET, value: 16.0),
-      const Condition.smallerThan(name: DESKTOP, value: 16.0),
-    ],
-  ).value!;
+  return getValueForScreenType<double>(
+    context: context, mobile: 16.0, tablet: 16.0, desktop: 32.0);
 }
 
 double sectionWidth(BuildContext context) {
