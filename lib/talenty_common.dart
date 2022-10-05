@@ -6,7 +6,6 @@ export 'components/buttons.dart';
 export 'components/chip.dart';
 export 'components/dialog.dart';
 export 'components/popupmenu.dart';
-export 'components/search_bar.dart';
 export 'components/tag.dart';
 export 'components/talenty_symmetric_fade.dart';
 export 'components/talenty_text_field.dart';
