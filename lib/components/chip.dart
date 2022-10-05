@@ -8,11 +8,7 @@ class TalentyChip extends StatefulWidget {
   final VoidCallback onTap;
   final bool tapped;
 
-  const TalentyChip(
-      {required this.text,
-      required this.onTap,
-      required this.tapped,
-      super.key});
+  const TalentyChip({required this.text, required this.onTap, required this.tapped, super.key});
 
   @override
   State<TalentyChip> createState() => _TalentyChipState();
@@ -50,15 +46,10 @@ class _TalentyChipState extends State<TalentyChip> {
           onTap: tap,
           borderRadius: BorderRadius.circular(borderRadius),
           child: Container(
-            padding:
-                EdgeInsets.symmetric(
-                  vertical: TalentyGapSpaces.level2, 
-                  horizontal: TalentyGapSpaces.level3
-                ),
+            padding: EdgeInsets.symmetric(horizontal: TalentyGapSpaces.level3),
             height: 72.0,
             decoration: BoxDecoration(
-              color:
-                  widget.tapped ? TalentyColors.carbon900 : TalentyColors.white,
+              color: widget.tapped ? TalentyColors.carbon900 : TalentyColors.white,
               borderRadius: BorderRadius.all(
                 Radius.circular(borderRadius),
               ),
@@ -66,10 +57,8 @@ class _TalentyChipState extends State<TalentyChip> {
             child: Center(
               child: Text(
                 widget.text,
-                style: TalentyTextStyles().bodySmallBold(
-                    color: widget.tapped
-                        ? TalentyColors.white
-                        : TalentyColors.carbon900),
+                style: TalentyTextStyles()
+                    .bodySmallBold(color: widget.tapped ? TalentyColors.white : TalentyColors.carbon900),
               ),
             ),
           ),
