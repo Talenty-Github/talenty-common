@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class TalentyLogo extends StatelessWidget {
   final String logo;
@@ -7,17 +6,11 @@ class TalentyLogo extends StatelessWidget {
   final double height;
   final Color? color;
 
-  const TalentyLogo({
-    required this.logo,
-    required this.width,
-    required this.height,
-    this.color,
-    super.key
-  });
+  const TalentyLogo({required this.logo, required this.width, required this.height, this.color, super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SvgPicture.asset(
+    return Image.asset(
       logo,
       width: width,
       height: height,

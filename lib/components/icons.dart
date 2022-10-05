@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class TalentyIcon extends StatelessWidget {
   final String icon;
@@ -15,7 +14,7 @@ class TalentyIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SvgPicture.asset(
+    return Image.asset(
       icon,
       width: size,
       height: size,
