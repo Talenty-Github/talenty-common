@@ -3,12 +3,12 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class TalentyIcon extends StatelessWidget {
   final String icon;
-  final double size;
+  final double? size;
   final Color? color;
 
   const TalentyIcon({
     required this.icon,
-    this.size = TalentyIconSize.small,
+    this.size,
     this.color,
     super.key,
   });
