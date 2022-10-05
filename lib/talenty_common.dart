@@ -1,7 +1,6 @@
 library talenty_common;
 
 export 'components/action_buttons.dart';
-export 'components/auth_button.dart';
 export 'components/buttons.dart';
 export 'components/chip.dart';
 export 'components/dialog.dart';

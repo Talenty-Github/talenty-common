@@ -14,23 +14,21 @@ class TalentyPopupMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-  
-  
     return PopupMenuButton(
-        itemBuilder: (_) => menuItems
-            .map(
-              (TalentyPopupMenuItem menuItem) => PopupMenuItem<String>(
-                onTap: menuItem.onTap,
-                child: Text(menuItem.label),
-              ),
-            )
-            .toList(),
-        offset: const Offset(0.0, 72.0),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
-        constraints: const BoxConstraints(minWidth: 266.0),
-        child: child
-      );
+      itemBuilder: (_) => menuItems
+          .map(
+            (TalentyPopupMenuItem menuItem) => PopupMenuItem<String>(
+              onTap: menuItem.onTap,
+              child: Text(menuItem.label),
+            ),
+          )
+          .toList(),
+      offset: const Offset(0.0, 72.0),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8),
+      ),
+      constraints: const BoxConstraints(minWidth: 266.0),
+      child: child,
+    );
   }
 }
