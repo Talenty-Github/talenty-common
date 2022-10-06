@@ -22,22 +22,32 @@ double sectionPadding(BuildContext context) {
   return (MediaQuery.of(context).size.width - sectionWidth(context)) / 2;
 }
 
-double pageHorizontalPadding(BuildContext context) {
+double pageHorizontalPadding(
+  BuildContext context, {
+  double? overrideMobile,
+  double? overrideTablet,
+  double? overrideDesktop,
+}) {
   return getValueForScreenType<double>(
     context: context,
-    mobile: TalentyDimension.mobilePadding,
-    tablet: TalentyDimension.tabletPadding,
-    desktop: TalentyDimension.desktopPadding,
+    mobile: overrideMobile ?? TalentyDimension.mobilePadding,
+    tablet: overrideTablet ?? TalentyDimension.tabletPadding,
+    desktop: overrideDesktop ?? TalentyDimension.desktopPadding,
   );
 }
 
-double pageHorizontalPaddingWithMaxWidth(BuildContext context) {
+double pageHorizontalPaddingWithMaxWidth(
+  BuildContext context, {
+  double? overrideMobile,
+  double? overrideTablet,
+  double? overrideDesktop,
+}) {
   final double width = MediaQuery.of(context).size.width;
 
   return getValueForScreenType<double>(
     context: context,
-    mobile: TalentyDimension.mobilePadding,
-    tablet: TalentyDimension.tabletPadding,
-    desktop: max(TalentyDimension.desktopPadding, (width - TalentyDimension.desktopMaxWidth) / 2),
+    mobile: overrideMobile ?? TalentyDimension.mobilePadding,
+    tablet: overrideTablet ?? TalentyDimension.tabletPadding,
+    desktop: overrideDesktop ?? max(TalentyDimension.desktopPadding, (width - TalentyDimension.desktopMaxWidth) / 2),
   );
 }
