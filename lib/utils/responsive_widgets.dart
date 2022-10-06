@@ -38,6 +38,6 @@ double pageHorizontalPaddingWithMaxWidth(BuildContext context) {
     context: context,
     mobile: TalentyDimension.mobilePadding,
     tablet: TalentyDimension.tabletPadding,
-    desktop: max(TalentyDimension.desktopPadding, TalentyDimension.desktopMaxWidth - width),
+    desktop: max(TalentyDimension.desktopPadding, (width - TalentyDimension.desktopMaxWidth) / 2),
   );
 }
