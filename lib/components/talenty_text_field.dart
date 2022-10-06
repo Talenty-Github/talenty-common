@@ -46,8 +46,7 @@ class TalentyTextFormField extends StatefulWidget {
     this.onChanged,
     super.key,
   }) : assert(
-          (type == TalentyTextFieldType.large && placeholder != null) ||
-              type == TalentyTextFieldType.small,
+          (type == TalentyTextFieldType.large && placeholder != null) || type == TalentyTextFieldType.small,
           'If the TextField is large, a placeholder is needed',
         );
 
@@ -134,8 +133,7 @@ class _TalentyTextFormFieldState extends State<TalentyTextFormField> {
         hintText: widget.type.isLarge ? null : widget.placeholder,
         isDense: true,
         border: InputBorder.none,
-        suffixIconConstraints: const BoxConstraints(
-            minHeight: 16, minWidth: 16, maxHeight: 16, maxWidth: 16),
+        suffixIconConstraints: const BoxConstraints(minHeight: 16, minWidth: 16, maxHeight: 16, maxWidth: 16),
         suffixIcon: InkWell(
           onTap: widget.onIconTap,
           child: TalentyIcon(
@@ -210,13 +208,9 @@ class _TalentyTextFormFieldState extends State<TalentyTextFormField> {
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
-      cursor: !widget.enabled || widget.readOnly
-          ? SystemMouseCursors.basic
-          : SystemMouseCursors.text,
+      cursor: !widget.enabled || widget.readOnly ? SystemMouseCursors.basic : SystemMouseCursors.text,
       child: GestureDetector(
-        onTap: !widget.enabled || widget.readOnly
-            ? null
-            : () => _focusNode.requestFocus(),
+        onTap: !widget.enabled || widget.readOnly ? null : () => _focusNode.requestFocus(),
         child: _buildContent(),
       ),
     );

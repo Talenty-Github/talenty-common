@@ -22,10 +22,10 @@ class TalentyLogo extends StatelessWidget {
 class TalentyLogos {
   static const String _logoPath = 'assets/logos';
 
-  static const String imagotipoHorizontal = '$_logoPath/Imagotipo-horizontal.svg';
-  static const String logoCompuesto = '$_logoPath/Logo-compuesto.svg';
-  static const String talentyIcon3640 = '$_logoPath/talenty-icon-36-40.svg';
-  static const String talentyIcon7280 = '$_logoPath/talenty-icon-72-80.svg';
-  static const String celebrityLogo = '$_logoPath/celebrity-logo.svg';
-  static const String handLogo = '$_logoPath/hand-logo.svg';
+  static const String imagotipoHorizontal = '$_logoPath/Imagotipo-horizontal.png';
+  static const String logoCompuesto = '$_logoPath/Logo-compuesto.png';
+  static const String talentyIcon3640 = '$_logoPath/talenty-icon-36-40.png';
+  static const String talentyIcon7280 = '$_logoPath/talenty-icon-72-80.png';
+  static const String celebrityLogo = '$_logoPath/celebrity-logo.png';
+  static const String handLogo = '$_logoPath/hand-logo.png';
 }
