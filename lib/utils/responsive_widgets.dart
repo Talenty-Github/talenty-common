@@ -41,6 +41,22 @@ double pageHorizontalPaddingWithMaxWidth(
   double? overrideMobile,
   double? overrideTablet,
   double? overrideDesktop,
+}) {
+  final double width = MediaQuery.of(context).size.width;
+
+  return getValueForScreenType<double>(
+    context: context,
+    mobile: overrideMobile ?? TalentyDimension.mobilePadding,
+    tablet: overrideTablet ?? TalentyDimension.tabletPadding,
+    desktop: overrideDesktop ?? max(TalentyDimension.desktopPadding, (width - TalentyDimension.desktopMaxWidth) / 2),
+  );
+}
+
+double pageInnerHorizontalPaddingWithMaxWidth(
+  BuildContext context, {
+  double? overrideMobile,
+  double? overrideTablet,
+  double? overrideDesktop,
   bool inner = false,
 }) {
   final double width = MediaQuery.of(context).size.width;
