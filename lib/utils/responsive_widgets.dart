@@ -41,13 +41,24 @@ double pageHorizontalPaddingWithMaxWidth(
   double? overrideMobile,
   double? overrideTablet,
   double? overrideDesktop,
+  bool inner = false,
 }) {
   final double width = MediaQuery.of(context).size.width;
+  final bool isExtraLarge = width >= TalentyDimension.largeDesktopBreakpoint;
 
-  return getValueForScreenType<double>(
-    context: context,
-    mobile: overrideMobile ?? TalentyDimension.mobilePadding,
-    tablet: overrideTablet ?? TalentyDimension.tabletPadding,
-    desktop: overrideDesktop ?? max(TalentyDimension.desktopPadding, (width - TalentyDimension.desktopMaxWidth) / 2),
-  );
+  if (!isExtraLarge || !inner) {
+    return getValueForScreenType<double>(
+      context: context,
+      mobile: overrideMobile ?? TalentyDimension.mobilePadding,
+      tablet: overrideTablet ?? TalentyDimension.tabletPadding,
+      desktop: overrideDesktop ?? max(TalentyDimension.desktopPadding, (width - TalentyDimension.desktopMaxWidth) / 2),
+    );
+  } else {
+    return getValueForScreenType<double>(
+      context: context,
+      mobile: 0.0,
+      tablet: 0.0,
+      desktop: 0.0,
+    );
+  }
 }
