@@ -46,14 +46,7 @@ double pageHorizontalPaddingWithMaxWidth(
   final double width = MediaQuery.of(context).size.width;
   final bool isExtraLarge = width >= TalentyDimension.largeDesktopBreakpoint;
 
-  if (!isExtraLarge && !inner) {
-    return getValueForScreenType<double>(
-      context: context,
-      mobile: 0.0,
-      tablet: 0.0,
-      desktop: 0.0,
-    );
-  } else if (!isExtraLarge || !inner) {
+  if ((!isExtraLarge || !inner) && (isExtraLarge || inner)) {
     return getValueForScreenType<double>(
       context: context,
       mobile: overrideMobile ?? TalentyDimension.mobilePadding,
