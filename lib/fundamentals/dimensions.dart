@@ -1,7 +1,7 @@
 class TalentyDimension {
   TalentyDimension._();
 
-  static double largeDesktopBreakpoint = 1400;
+  static double largeDesktopBreakpoint = 1540.0;
   static double desktopBreakpoint = 1024;
   static double tabletBreakpoint = 600;
   static double mobileBreakpoint = 0;
