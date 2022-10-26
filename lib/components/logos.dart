@@ -28,4 +28,7 @@ class TalentyLogos {
   static const String talentyIcon7280 = '$_logoPath/talenty-icon-72-80.png';
   static const String celebrityLogo = '$_logoPath/celebrity-logo.png';
   static const String handLogo = '$_logoPath/hand-logo.png';
+  static const String nequi = '$_logoPath/nequi.png';
+  static const String bancolombia = '$_logoPath/bancolombia.png';
+  static const String bancoBogota = '$_logoPath/banco-bogota.png';
 }
