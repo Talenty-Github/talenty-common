@@ -31,4 +31,5 @@ class TalentyLogos {
   static const String nequi = '$_logoPath/nequi.png';
   static const String bancolombia = '$_logoPath/bancolombia.png';
   static const String bancoBogota = '$_logoPath/banco-bogota.png';
+  static const String creditCard = '$_logoPath/creditcard.png';
 }
