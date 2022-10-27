@@ -5,6 +5,7 @@ export 'components/buttons.dart';
 export 'components/chip.dart';
 export 'components/dialog.dart';
 export 'components/icons.dart';
+export 'components/logos.dart';
 export 'components/popupmenu.dart';
 export 'components/tag.dart';
 export 'components/talenty_symmetric_fade.dart';
