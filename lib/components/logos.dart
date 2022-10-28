@@ -32,4 +32,7 @@ class TalentyLogos {
   static const String bancolombia = '$_logoPath/bancolombia.png';
   static const String bancoBogota = '$_logoPath/banco-bogota.png';
   static const String creditCard = '$_logoPath/creditcard.png';
+  static const String talentyLogo = '$_logoPath/talenty_logo.png';
+  static const String toptyLogoWhite = '$_logoPath/topty_logo_white.png';
+  static const String celebrityLogoWhite = '$_logoPath/celebrity_logo_white.png';
 }
