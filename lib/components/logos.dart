@@ -35,9 +35,6 @@ class TalentyLogos {
   static const String talentyLogo = '$_logoPath/talenty_logo.png';
   static const String toptyLogoWhite = '$_logoPath/topty_logo_white.png';
   static const String celebrityLogoWhite = '$_logoPath/celebrity_logo_white.png';
-
-  // svg logos
-  static const String celebrityLogoSvg = '$_logoPath/celebrityLogoSvg.svg';
-  static const String talentyLogoSvg = '$_logoPath/talentyLogoSvg.svg';
-  static const String toptyLogoSvg = '$_logoPath/toptyLogoSvg.svg';
+  static const String toptyWhite = '$_logoPath/toptyWhite.png';
+  static const String toptyIconWhite = '$_logoPath/toptyIconWhite.png';
 }
