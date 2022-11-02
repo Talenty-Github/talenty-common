@@ -10,14 +10,13 @@ class TalentyTag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 24.0,
       margin: const EdgeInsets.only(right: 12.0),
       decoration: BoxDecoration(
         color: TalentyColors.info100,
         border: Border.all(color: TalentyColors.info800),
         borderRadius: const BorderRadius.all(Radius.circular(4.0))
       ),
-      child: Padding(padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 1.0),
+      child: Padding(padding: const EdgeInsets.all(4.0),
         child: Text(text, style: TalentyTextStyles().bodyLargeNormal(color: TalentyColors.info800)),
       )
     );
