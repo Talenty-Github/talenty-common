@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:talenty_common/fundamentals/colors.dart';
 
+const String fontFamily = 'Roboto';
+
 class TalentyTextStyles {
   TextStyle headingExtraLarge({
     Color color = TalentyColors.carbon900,
@@ -8,6 +10,7 @@ class TalentyTextStyles {
     bool underline = false,
   }) => TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 36.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -20,6 +23,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 32.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -32,6 +36,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 24.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -44,6 +49,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 20.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -56,6 +62,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 20.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -68,6 +75,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 18.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -80,6 +88,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 18.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -92,6 +101,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 16.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -104,6 +114,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 16.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -116,6 +127,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 14.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -128,6 +140,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 14.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -140,6 +153,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 12.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -152,6 +166,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 12.0,
         decoration: underline ? TextDecoration.underline : null,
@@ -164,6 +179,7 @@ class TalentyTextStyles {
   }) =>
       TextStyle(
         color: color,
+        fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 10.0,
         decoration: underline ? TextDecoration.underline : null,
