@@ -1,4 +1,6 @@
 class TalentyImages {
+  TalentyImages._();
+  
   static const String _imagesPath = 'assets/images';
 
   static const String talentySteps = '$_imagesPath/talenty-steps.png';
