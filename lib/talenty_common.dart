@@ -17,6 +17,7 @@ export 'fundamentals/dimensions.dart';
 export 'fundamentals/error_codes.dart';
 export 'fundamentals/gap_spaces.dart';
 export 'fundamentals/images.dart';
+export 'fundamentals/banners.dart';
 export 'fundamentals/text_styles.dart';
 export 'utils/number_format.dart';
 export 'utils/responsive_widgets.dart';
