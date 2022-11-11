@@ -8,11 +8,13 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon900,
     FontWeight fontWeight = FontWeight.w500,
     bool underline = false,
+    double? height,
   }) => TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 36.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -20,12 +22,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon900,
     FontWeight fontWeight = FontWeight.w500,
     bool underline = false,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 32.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -33,12 +37,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon900,
     FontWeight fontWeight = FontWeight.w500,
     bool underline = false,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 24.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -46,12 +52,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon800,
     FontWeight fontWeight = FontWeight.w500,
     bool underline = false,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 20.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -59,12 +67,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon800,
     FontWeight fontWeight = FontWeight.w400,
     bool underline = false,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 20.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -72,12 +82,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon800,
     FontWeight fontWeight = FontWeight.w500,
     bool underline = false,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 18.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -85,12 +97,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon800,
     FontWeight fontWeight = FontWeight.w400,
     bool underline = false,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 18.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -98,12 +112,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon800,
     FontWeight fontWeight = FontWeight.w500,
     bool underline = false,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 16.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -111,12 +127,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon800,
     FontWeight fontWeight = FontWeight.w400,
     bool underline = false,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 16.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -124,12 +142,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon800,
     FontWeight fontWeight = FontWeight.w500,
     bool underline = false,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 14.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -137,12 +157,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon800,
     FontWeight fontWeight = FontWeight.w400,
     bool underline = false,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 14.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -150,12 +172,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon800,
     bool underline = false,
     FontWeight fontWeight = FontWeight.w500,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 12.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -163,12 +187,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon800,
     bool underline = false,
     FontWeight fontWeight = FontWeight.w400,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 12.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 
@@ -176,12 +202,14 @@ class TalentyTextStyles {
     Color color = TalentyColors.carbon800,
     bool underline = false,
     FontWeight fontWeight = FontWeight.w500,
+    double? height,
   }) =>
       TextStyle(
         color: color,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         fontSize: 10.0,
+        height: height,
         decoration: underline ? TextDecoration.underline : null,
       );
 }
