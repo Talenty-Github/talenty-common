@@ -43,6 +43,7 @@ class Actions {
   const Actions();
   final String _actionsPath = 'assets/icons/actions';
 
+  String get grid => '$_actionsPath/Grid.png';
   String get bookmark => '$_actionsPath/Bookmark.png';
   String get copy => '$_actionsPath/Copy.png';
   String get crop => '$_actionsPath/Crop.png';
