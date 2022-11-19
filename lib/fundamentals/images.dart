@@ -13,6 +13,7 @@ class TalentyImages {
   static const String handImage = '$_imagesPath/hand-image.png';
   static const String bgLandingBusiness = '$_imagesPath/bg-landing-business.png';
   static const String toptyGalleryLogo = '$_imagesPath/topty-gallery-logo.png';
+  static const String bgLadingTalents = '$_imagesPath/bg-landing-talents.png';
 
   
   // history photos
