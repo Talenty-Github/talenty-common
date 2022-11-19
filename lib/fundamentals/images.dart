@@ -12,6 +12,8 @@ class TalentyImages {
   static const String bannerCategory = '$_imagesPath/banner-category.jpg';
   static const String handImage = '$_imagesPath/hand-image.png';
   static const String bgLandingBusiness = '$_imagesPath/bg-landing-business.png';
+  static const String toptyGalleryLogo = '$_imagesPath/topty-gallery-logo.png';
+
   
   // history photos
   static List<String> storyPhotos = ['$_imagesPath/storyphoto01.jpg'];
