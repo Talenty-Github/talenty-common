@@ -17,7 +17,7 @@ class TalentyTag extends StatelessWidget {
         borderRadius: const BorderRadius.all(Radius.circular(4.0))
       ),
       child: Padding(padding: const EdgeInsets.all(4.0),
-        child: Text(text, style: TalentyTextStyles().bodyLargeNormal(color: TalentyColors.info800)),
+        child: Text(text, style: TalentyTextStyles().bodyLargeBold(color: TalentyColors.info800)),
       )
     );
   }
