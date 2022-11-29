@@ -14,6 +14,7 @@ class TalentyImages {
   static const String bgLandingBusiness = '$_imagesPath/bg-landing-business.png';
   static const String toptyGalleryLogo = '$_imagesPath/topty-gallery-logo.png';
   static const String bgLadingTalents = '$_imagesPath/bg-landing-talents.png';
+  static const String bgMobileBanner = '$_imagesPath/mobile-banner.jpeg';
 
   
   // history photos
