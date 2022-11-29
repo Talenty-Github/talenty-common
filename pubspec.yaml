@@ -23,7 +23,3 @@ dev_dependencies:
 
 
 flutter:
-
-  assets:
-    - assets/docs/
-    - assets/docs/legal/

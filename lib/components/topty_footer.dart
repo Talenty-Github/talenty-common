@@ -1,13 +1,20 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:talenty_common/routes/main_routes.dart';
 import 'package:talenty_common/talenty_common.dart';
-import 'package:talenty_common/utils/social_network_helper.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class TalentyFooter extends StatefulWidget {
-  const TalentyFooter({super.key});
+  final String termsConditions;
+  final String privacyPolicy;
+  final String cookiesPolicy;
+  
+  const TalentyFooter({
+    required this.termsConditions,
+    required this.privacyPolicy,
+    required this.cookiesPolicy,
+    super.key
+  });
 
   @override
   State<TalentyFooter> createState() => _TalentyFooterState();
@@ -201,19 +208,19 @@ class _TalentyFooterState extends State<TalentyFooter> {
       dividerMobile,
       heightMobile,
       InkWell(
-        onTap: () => Beamer.of(context).beamToNamed(MainRoutes.termsConditions),
+        onTap: () => Beamer.of(context).beamToNamed(widget.termsConditions),
         child: Text('Términos y Condiciones', style: textLegalStyle),
       ),
       dividerMobile,
       heightMobile,
       InkWell(
-        onTap: () => Beamer.of(context).beamToNamed(MainRoutes.privacyPolicy),
+        onTap: () => Beamer.of(context).beamToNamed(widget.privacyPolicy),
         child: Text('Políticas de privacidad', style: textLegalStyle),
       ),
       dividerMobile,
       heightMobile,
       InkWell(
-        onTap: () => Beamer.of(context).beamToNamed(MainRoutes.cookiesPolicy),
+        onTap: () => Beamer.of(context).beamToNamed(widget.cookiesPolicy),
         child: Text('Política de Cookies', style: textLegalStyle),
       ),
     ];

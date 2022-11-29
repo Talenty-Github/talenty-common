@@ -23,4 +23,3 @@ export 'fundamentals/text_styles.dart';
 export 'utils/number_format.dart';
 export 'utils/responsive_widgets.dart';
 export 'utils/social_network_helper.dart';
-export 'widgets/topty_legal.dart';
