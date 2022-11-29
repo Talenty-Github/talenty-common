@@ -123,7 +123,7 @@ class TalentyButton extends StatefulWidget {
   }) {
     mainAxisSize = MainAxisSize.min;
     mainAxisAlignment = MainAxisAlignment.start;
-    horizontalPadding = 0.0; // TalentyGapSpaces.level2
+    horizontalPadding = TalentyGapSpaces.level2;
     underline = true;
     fontColor = disabled ? TalentyColors.carbon400 : TalentyColors.carbon900;
     borderColor = TalentyColors.transparent;
