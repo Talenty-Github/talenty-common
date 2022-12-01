@@ -3,7 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 enum SocialNetwork {
   tiktok('https://www.tiktok.com/@topty.co'),
   instagram('https://www.instagram.com/topty.col/'),
-  facebook('https://www.facebook.com/Talenty.co'),
+  facebook('https://www.facebook.com/Toptycol-101797129405163/'),
   youtube('https://www.youtube.com/channel/UC9TQ51gqgT69-AnjXgPPw0A');
 
   final String url;
